@@ -13,7 +13,7 @@ import ca.yorku.cmg.lob.orderbook.Ask;
 /**
  * A trading agent kind that reacts more carefully and conservatively to news.
  */
-public class TradingAgentConservative extends TradingAgent {
+public class TradingAgentConservative extends TradingAgent implements ITradingStrategy {
 
 	public TradingAgentConservative(Trader t, StockExchange e, NewsBoard n) {
 		super(t, e, n);
