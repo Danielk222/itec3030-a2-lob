@@ -12,6 +12,7 @@ public abstract class TradingAgent {
 	protected Trader t;
 	protected StockExchange exc;
 	protected NewsBoard news;
+	protected ITradingStrategy strat
 	
 	/**
 	 * Constructor
@@ -23,6 +24,7 @@ public abstract class TradingAgent {
 		this.t=t;
 		this.exc = e;
 		this.news = n;
+		this.strat = s;
 	}
 	
 	/**
