@@ -13,7 +13,7 @@ import ca.yorku.cmg.lob.tradestandards.IOrder;
 /**
  * A trading agent kind that reacts more eagerly to news.
  */
-public class TradingAgentAggressive extends TradingAgent {
+public class TradingAgentAggressive extends TradingAgent implements ITradingStrategy {
 
 	public TradingAgentAggressive(Trader t, StockExchange e, NewsBoard n) {
 		super(t, e, n);
