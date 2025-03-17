@@ -12,7 +12,7 @@ public abstract class TradingAgent {
 	protected Trader t;
 	protected StockExchange exc;
 	protected NewsBoard news;
-	protected ITradingStrategy strat
+	protected ITradingStrategy strat;
 	
 	/**
 	 * Constructor
@@ -20,7 +20,7 @@ public abstract class TradingAgent {
 	 * @param e The {@linkplain StockExchange} object at which the agent has an account and trades in. 
 	 * @param n The {@linkplain NewsBoard} object that generates news events.
 	 */
-	public TradingAgent(Trader t, StockExchange e, NewsBoard n, Strategy s) {
+	public TradingAgent(Trader t, StockExchange e, NewsBoard n, ITradingStrategy s) {
 		this.t=t;
 		this.exc = e;
 		this.news = n;
