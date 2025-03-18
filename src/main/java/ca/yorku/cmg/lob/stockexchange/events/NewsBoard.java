@@ -20,6 +20,7 @@ public class NewsBoard {
 	PriorityQueue<Event> eventQueue = new PriorityQueue<>((e1, e2) -> Long.compare(e1.getTime(), e2.getTime()));
 
 	SecurityList securities;
+	private List<INewsObserver> observers = new ArrayList<>();
 	
 	public NewsBoard(SecurityList x) {
 		this.securities = x;
