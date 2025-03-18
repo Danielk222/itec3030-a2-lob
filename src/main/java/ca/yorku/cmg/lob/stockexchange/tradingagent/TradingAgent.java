@@ -23,6 +23,7 @@ public abstract class TradingAgent implements INewsObserver {
 		this.t=t;
 		this.exc = e;
 		this.news = n;
+		this.news.registerObserver(this);
 	}
 	
 	/**
@@ -66,7 +67,7 @@ public abstract class TradingAgent implements INewsObserver {
 	 */
 	protected abstract void actOnEvent(Event e, int pos, int price);
 	
-	
-	
-
+	public void update(Event event) {
+		examineEvent(event);
+	}
 }
