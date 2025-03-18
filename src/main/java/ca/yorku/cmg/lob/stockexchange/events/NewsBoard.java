@@ -111,13 +111,23 @@ public class NewsBoard {
 		return (e);
 	}
 	
-	public void registerObserver(Newsobserver o)
-	observers.add(o)
+	public void registerObserver(INewsobserver o) {
+		observers.add(o)
+	}
+	
+	public void notifyObservers(Event event) {
+		for (INewsObserver observer: observers) {
+			observer.update(event)
+		}
+	} 
 	/**
 	 * Stub for the observer part. Runs the entire queue of events and sends notifications to registered trading agents.   
 	 */
 	public void runEventsList() {
-
+		while (!eventQueue.isEmpty()) {
+			Event event = eventQueue.poll();
+			notifyObservers(event)
+		}
 	}
 	
 	
