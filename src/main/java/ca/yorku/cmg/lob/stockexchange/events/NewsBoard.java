@@ -111,7 +111,8 @@ public class NewsBoard {
 		return (e);
 	}
 	
-	
+	public void registerObserver(Newsobserver o)
+	observers.add(o)
 	/**
 	 * Stub for the observer part. Runs the entire queue of events and sends notifications to registered trading agents.   
 	 */
