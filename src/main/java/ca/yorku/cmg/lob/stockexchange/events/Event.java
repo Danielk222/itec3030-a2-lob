@@ -15,7 +15,7 @@ public abstract class Event {
 	 * @param time The time the event occurs. 
 	 * @param sec The security related to the event. 
 	 */
-	Event(long time, Security sec){
+	public Event(long time, Security sec){
 		this.time = time;
 		this.security = sec;
 	}
