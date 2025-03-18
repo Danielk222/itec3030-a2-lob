@@ -26,10 +26,10 @@ public abstract class Event {
 	public void setTime(long time) {
 		this.time = time;
 	}
-	public Security getSecrity() {
+	public Security getSecurity() {
 		return security;
 	}
-	public void setSecrity(Security secrity) {
+	public void setSecurity(Security secrity) {
 		this.security = secrity;
 	}
 }
