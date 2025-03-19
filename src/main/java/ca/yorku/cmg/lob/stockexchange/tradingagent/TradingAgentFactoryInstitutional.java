@@ -1,4 +1,4 @@
-package
+package ca.yorku.cmg.lob.stockexchange.tradingagent;
 
 import
 
