@@ -14,7 +14,7 @@ import ca.yorku.cmg.lob.security.SecurityList;
 /**
  * A NewsBoard object generates and shares financial/economic events that affect specific securities 
  */
-public class NewsBoard implements Subject {
+public class NewsBoard extends Subject {
 
 	//Events are queued ordered by time
 	PriorityQueue<Event> eventQueue = new PriorityQueue<>((e1, e2) -> Long.compare(e1.getTime(), e2.getTime()));
