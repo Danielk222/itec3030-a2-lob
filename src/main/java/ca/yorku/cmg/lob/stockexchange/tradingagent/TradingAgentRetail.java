@@ -5,7 +5,7 @@ import ca.yorku.cmg.lob.stockexchange.events.NewsBoard;
 import ca.yorku.cmg.lob.trader.Trader;
 
 public class TradingAgentRetail extends TradingAgent {
-public RetailTradingAgent(ITradingStrategy s) {
+public TradingAgentRetail(ITradingStrategy s) {
         super(s);
     }
 
