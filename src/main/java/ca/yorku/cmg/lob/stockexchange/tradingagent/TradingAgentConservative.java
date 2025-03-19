@@ -15,8 +15,8 @@ import ca.yorku.cmg.lob.orderbook.Ask;
  */
 public class TradingAgentConservative extends TradingAgent implements ITradingStrategy {
 
-	public TradingAgentConservative(Trader t, StockExchange e, NewsBoard n) {
-		super(t, e, n);
+	public TradingAgentConservative(Trader t, StockExchange e, NewsBoard n, ITradingStrategy s) {
+		super(t, e, n, s);
 	}
 
 	@Override
