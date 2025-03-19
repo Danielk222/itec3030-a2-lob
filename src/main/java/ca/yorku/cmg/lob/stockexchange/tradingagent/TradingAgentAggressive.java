@@ -15,8 +15,8 @@ import ca.yorku.cmg.lob.tradestandards.IOrder;
  */
 public class TradingAgentAggressive extends TradingAgent implements ITradingStrategy {
 
-	public TradingAgentAggressive(Trader t, StockExchange e, NewsBoard n) {
-		super(t, e, n);
+	public TradingAgentAggressive(Trader t, StockExchange e, NewsBoard n, ITradingStrategy s) {
+		super(t, e, n, s);
 	}
 
 	@Override
