@@ -1,3 +1,7 @@
+package ca.yorku.cmg.lob.stockexchange.tradingagent;
+
+import ca.yorku.cmg.lob.stockexchange.events.Event
+	
 public abstract class Subject {
   
   public void registerObserver(INewsobserver o) {
