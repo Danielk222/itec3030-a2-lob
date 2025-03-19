@@ -120,7 +120,7 @@ public class NewsBoard {
 	}
 		 
 	public void notifyObservers(Event event) {
-		for (INewsObserver observer: observers) {
+		for (INewsObserver o: observers) {
 			observer.update(event)
 		}
 	} 
