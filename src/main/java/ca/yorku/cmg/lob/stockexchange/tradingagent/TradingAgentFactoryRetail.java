@@ -4,7 +4,7 @@ import ca.yorku.cmg.lob.stockexchange.StockExchange;
 import ca.yorku.cmg.lob.stockexchange.events.NewsBoard;
 import ca.yorku.cmg.lob.trader.Trader;
 
-public class TradingAgentFactoryRetail implements TradingAgentFactory {
+public class TradingAgentFactoryRetail extends AbstractTradingAgentFactory {
     public TradingAgent createConservativeAgent() {
         return new TradingAgentRetail(new TradingStrategyConservative());
     }
