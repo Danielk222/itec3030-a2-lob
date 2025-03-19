@@ -7,10 +7,10 @@ import ca.yorku.cmg.lob.trader.Trader;
 public class TradingAgentFactoryRetail implements TradingAgentFactory {
 
     public TradingAgent createConservativeAgent() {
-        return new TradingAgentRetail(new ConservativeTradingStrategy());
+        return new TradingAgentRetail(new TradingStrategyConservative());
     }
 
     public TradingAgent createAggressiveAgent() {
-        return new TradingAgentRetail(new AggressiveTradingStrategy());
+        return new TradingAgentRetail(new TradingStrategyAggresive());
     }
 }
