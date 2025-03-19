@@ -6,11 +6,11 @@ import ca.yorku.cmg.lob.trader.Trader;
 
 public class TradingAgentFactoryInstitutional extends AbstractTradingAgentFactory {
   public TradingAgent createConservativeAgent() {
-        return new TradingAgentInstitutional(new ConservativeTradingStrategy());
+        return new TradingAgentInstitutional(new TradingStrategyConservative());
     }
 
     public TradingAgent createAggressiveAgent() {
-        return new TradingAgentInstitutional(new AggressiveTradingStrategy());
+        return new TradingAgentInstitutional(new TradingStrategyAggresive());
     }
 
 } 
