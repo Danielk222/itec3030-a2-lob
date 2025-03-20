@@ -10,4 +10,6 @@ public class TradingAgentFactory extends AbstractTradingAgentFactory {
   public TradingAgentFactory (Newsboard n) {
     this.n = n;
   }
+
+  public TradingAgent agentCreat(String type, String style)
 }
