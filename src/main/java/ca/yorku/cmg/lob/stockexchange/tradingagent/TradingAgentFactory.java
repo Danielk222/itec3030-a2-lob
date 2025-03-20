@@ -11,5 +11,8 @@ public class TradingAgentFactory extends AbstractTradingAgentFactory {
     this.n = n;
   }
 
-  public TradingAgent agentCreat(String type, String style)
+  public TradingAgent createAgent(String type, String style) {
+    ITradingStrategy s = createStrategy(style);
+        return createAgentByType(type, strategy);
+  }
 }
